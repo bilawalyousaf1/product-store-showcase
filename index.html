@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Store — Asynchronous & Synchronous</title>
+    <meta
+      name="description"
+      content="A responsive product store built with async/await and API integration."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="dark">
+    <header>
+      <h1 id="heading">🛍️ Product Store</h1>
+      <p class="subtitle">Async & Await API Integration</p>
+      <button
+        id="theme-toggle"
+        class="theme-btn"
+        onclick="changetheme()"
+        aria-label="Toggle theme"
+      >
+        <i class="fa-solid fa-sun"></i>
+      </button>
+    </header>
+
+    <div class="loader" id="loader">
+      <div class="spinner"></div>
+      <p>Loading products...</p>
+    </div>
+
+    <div class="output" id="output"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="script.mjs"></script>
+  </body>
+</html>
